@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mahfuzur Rahman Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        scroll-behavior: smooth;
+      }
+      .fade-in {
+        animation: fadeIn 1s ease-in-out;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      nav a {
+        transition: color 0.3s;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-800">
+    <!-- NAVBAR -->
+    <nav class="bg-gray-800 shadow-md fixed w-full z-50 text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16 items-center">
+          <div class="text-xl font-bold text-blue-600">Mahfuzur Rahman</div>
+          <div class="space-x-4 hidden md:flex">
+            <a href="#home" class=" text-white hover:text-blue-600">Home</a>
+            <a href="#about" class=" text-white hover:text-blue-600">About</a>
+            <a href="#skills" class=" text-white hover:text-blue-600"
+              >Skills</a
+            >
+            <a href="#projects" class=" text-white hover:text-blue-600"
+              >Projects</a
+            >
+            <a href="#contact" class=" text-white hover:text-blue-600"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section
+      id="home"
+      class="min-h-screen flex flex-col justify-center items-center text-center pt-20 relative"
+    >
+      <!-- Background Image + Overlay -->
+      <div class="absolute inset-0">
+        <img
+<<<<<<< HEAD
+          src="./img/b.png"
+          alt="Banner"
+=======
+          src="./img/Bannar.png"
+          alt="Hero Banner"
+>>>>>>> d2f4305476c7bdec04762f8d783f0127963a62aa
+          class="w-full h-full object-cover brightness-50"
+        />
+      </div>
+
+      <!-- Content -->
+      <div class="relative z-10 text-white px-4">
+        <h1 class="text-5xl sm:text-6xl font-extrabold mb-4 fade-in">
+          Mahfuzur Rahman
+        </h1>
+        <p class="text-xl sm:text-2xl mb-6 fade-in delay-200">
+          MERN-Stack Developer
+        </p>
+        <div class="flex flex-wrap justify-center gap-4 fade-in delay-400">
+          <a
+            href="#contact"
+            class="px-6 py-3 bg-blue-600 text-white rounded-lg shadow-lg hover:bg-blue-700 transition"
+            >Contact Me</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="max-w-5xl mx-auto px-4 sm:px-6 py-12 fade-in">
+      <h2
+        class="text-3xl font-bold text-gray-900 mb-8 border-b-2 border-blue-600 inline-block text-white"
+      >
+        About Me
+      </h2>
+      <div class="flex flex-col md:flex-row items-center gap-8">
+        <!-- picture -->
+        <div class="flex-shrink-0">
+          <img
+            src="./img/mahfuz.jpg"
+            alt="Mahfuzur Rahman"
+            class="w-48 h-48 rounded-full shadow-lg object-cover"
+          />
+        </div>
+        <!-- text -->
+        <div class="text-white text-base sm:text-lg leading-relaxed">
+          <p class="mb-4 ">
+            Hi, I'm
+            <span class="font-semibold text-blue-600">Mahfuzur Rahman</span>, a
+            dedicated MERN-Stack Developer. I craft responsive and scalable web
+            applications with a focus on modern UI/UX, problem-solving, and
+            efficient code.
+          </p>
+          <p>
+            I enjoy learning new technologies, building innovative projects, and
+            collaborating with teams to create meaningful solutions. My goal is
+            to continuously grow as a developer while delivering high-quality
+            work.
+          </p>
+          <div class="mt-4">
+            <a
+              href="#contact"
+              class="px-6 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition"
+              >Hire Me</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="max-w-5xl mx-auto px-4 sm:px-6 py-12 fade-in">
+      <h2
+        class="text-3xl font-bold text-gray-900 mb-8 border-b-2 border-blue-600 inline-block text-white"
+      >
+        Skills
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="p-4 bg-gray-900 rounded-lg shadow hover:shadow-xl transition">
+          <h3 class="font-semibold text-lg text-blue-600 mb-2">Languages</h3>
+          <p class="text-white">JavaScript</p>
+        </div>
+        <div class="p-4 bg-gray-900 rounded-lg shadow hover:shadow-xl transition">
+          <h3 class="font-semibold text-lg text-blue-600 mb-2">Frontend</h3>
+          <p class="text-white">React.js, TailwindCSS, HTML5, CSS3</p>
+        </div>
+        <div class="p-4 bg-gray-900 rounded-lg shadow hover:shadow-xl transition">
+          <h3 class="font-semibold text-lg text-blue-600 mb-2">Backend</h3>
+          <p class="text-white">Node.js, Express.js, Firebase</p>
+        </div>
+        <div class="p-4 bg-gray-900 rounded-lg shadow hover:shadow-xl transition">
+          <h3 class="font-semibold text-lg text-blue-600 mb-2">
+            Database & Cloud
+          </h3>
+          <p class="text-white">MongoDB, Firebase (Auth, Firestore, Storage)</p>
+        </div>
+        <div class="p-4 bg-gray-900 rounded-lg shadow hover:shadow-xl transition">
+          <h3 class="font-semibold text-lg text-blue-600 mb-2">
+            Version Control
+          </h3>
+          <p class="text-white">Git, GitHub, Vercel, Netlify</p>
+        </div>
+        <div class="p-4 bg-gray-900 rounded-lg shadow hover:shadow-xl transition">
+          <h3 class="font-semibold text-lg text-blue-600 mb-2">Soft Skills</h3>
+          <p class="text-white">Problem-solving, Communication, Teamwork</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="max-w-5xl mx-auto px-4 sm:px-6 py-12 fade-in">
+      <h2
+        class="text-3xl font-bold text-white mb-10 border-b-4 border-blue-600 inline-block"
+      >
+        Projects
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Project Card 1 -->
+        <div
+          class="bg-gray-900 p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300"
+        >
+          <h3
+            class="font-bold text-2xl text-blue-600 mb-3 hover:text-blue-700 transition-colors"
+          >
+            PawMart
+          </h3>
+          <div class="flex flex-wrap gap-3 mb-4">
+            <a
+              href="https://github.com/ripon301252/pawmart-client-B-12"
+              target="_blank"
+              class="text-blue-600 underline hover:text-blue-800"
+              >GitHub</a
+            >
+            <a
+              href="https://pawmart-cf02df.netlify.app/myOrder"
+              target="_blank"
+              class="text-blue-600 underline hover:text-blue-800"
+              >Live</a
+            >
+            <a
+              href="https://pawmart-server-psi.vercel.app/"
+              target="_blank"
+              class="text-blue-600 underline hover:text-blue-800"
+              >Server</a
+            >
+          </div>
+          <ul class="list-disc list-inside ml-4 space-y-2 text-white">
+            <li>Responsive pet e-commerce platform</li>
+            <li>User authentication & role-based access</li>
+            <li>Admin dashboard</li>
+            <li>Fast performance with modern frontend</li>
+          </ul>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div
+          class="bg-gray-900 p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300"
+        >
+          <h3
+            class="font-bold text-2xl text-blue-600 mb-3 hover:text-blue-700 transition-colors"
+          >
+            Kidstoy
+          </h3>
+          <div class="flex flex-wrap gap-3 mb-4">
+            <a
+              href="https://github.com/ripon301252/kids-toy-update"
+              target="_blank"
+              class="text-blue-600 underline hover:text-blue-800"
+              >GitHub</a
+            >
+            <a
+              href="https://kids-toy-up-73b1c6.netlify.app/"
+              target="_blank"
+              class="text-blue-600 underline hover:text-blue-800"
+              >Live</a
+            >
+          </div>
+          <ul class="list-disc list-inside text-white ml-4 space-y-2">
+            <li>Responsive kids toy e-commerce platform</li>
+            <li>User login & shopping cart</li>
+            <li>Filters, categories & search</li>
+            <li>Checkout with dynamic pricing</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="max-w-4xl mx-auto px-4 sm:px-6 py-12 fade-in">
+      <h2
+        class="text-3xl font-bold text-white mb-4 border-b-2 border-blue-600 inline-block"
+      >
+        Contact Me
+      </h2>
+      <form
+        class="grid grid-cols-1 md:grid-cols-2 gap-6 bg-gray-900 p-6 rounded-lg shadow"
+      >
+        <input
+          type="text"
+          placeholder="Name"
+          class="border border-gray-700 p-2 rounded w-full text-white"
+        />
+        <input
+          type="email"
+          placeholder="Email"
+          class="border border-gray-700 p-2 rounded w-full text-white"
+        />
+        <input
+          type="text"
+          placeholder="Subject"
+          class="border border-gray-700 p-2 rounded w-full text-white"
+        />
+        <textarea
+          placeholder="Message"
+          class="border border-gray-700 p-2 rounded w-full text-white"
+        ></textarea>
+        <button
+          class="bg-blue-600 text-white px-6 py-3 rounded shadow hover:bg-blue-700 transition md:col-span-2"
+        >
+          Send Message
+        </button>
+      </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 py-10 mt-12">
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-gray-300 space-y-4"
+      >
+        <!-- Social Icons -->
+        <div class="flex space-x-6">
+          <a
+            href="https://www.facebook.com/mahfuzur.rahman.98284"
+            target="_blank"
+            class="text-gray-300 hover:text-blue-500 hover:scale-110 transform transition duration-300"
+          >
+            <ion-icon name="logo-facebook" class="text-2xl"></ion-icon>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/mahfuzur-rahman-280471392/"
+            target="_blank"
+            class="text-gray-300 hover:text-blue-400 hover:scale-110 transform transition duration-300"
+          >
+            <ion-icon name="logo-linkedin" class="text-2xl"></ion-icon>
+          </a>
+          <a
+            href="https://github.com/ripon301252"
+            target="_blank"
+            class="text-gray-300 hover:text-white hover:scale-110 transform transition duration-300"
+          >
+            <ion-icon name="logo-github" class="text-2xl"></ion-icon>
+          </a>
+        </div>
+
+        <!-- Separator Line -->
+        <hr class="w-full border-gray-700 my-2" />
+
+        <!-- Copyright -->
+        <p class="text-gray-400 text-sm text-center">
+          © 2025 <span class="font-semibold text-white">Mahfuzur Rahman</span>.
+          All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
